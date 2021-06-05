@@ -1,0 +1,14 @@
+<template>
+        <lightning-card title="Lightning Data Component">
+            <template if:true={accountRec.data}> 
+                <div class="slds-m-around_medium">
+                    <p>{name}</p>
+                    <p>{Website}</p>
+                    <p>
+                    <lightning-formatted-phone value={phone}></lightning-formatted-phone>
+                    </p>
+                </div>
+                <lightning-button class="slds-m-left_small" label="Change" onclick={changeButton} variant="brand"></lightning-button>
+            </template>
+        </lightning-card>
+    </template>
